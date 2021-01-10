@@ -57,8 +57,8 @@ const navLinks = [
     { title: `Cliente`, path: `/cliente`, classN: `b2`, iconN: faIdBadge },
     { title: `siclick`, path: `/siclick`, classN: `b3`, iconN: faClipboardCheck },
     { title: `Soporte`, path: `/soporte`, classN: `b4`, iconN: faTicketAlt },
-    { title: `Carrito`, path: `/carrito`, classN: `b5`, iconN: faShoppingCart },
-    { title: `Perfil`, path: `/perfil`, classN: `b4` ,iconN: faUserAlt}
+    { title: `0`, path: `/carrito`, classN: `b5`, iconN: faShoppingCart },
+    { title: `v`, path: `/perfil`, classN: `b4` ,iconN: faUserAlt}
   ]
 
   const Header = () => {
