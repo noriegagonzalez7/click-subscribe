@@ -30,7 +30,13 @@ function App() {
                             {productos.map(({ nombre, descripcion, fabricante, id, precio, imagen }) => (
                                 <ListItem>
                                   <img src={imagen} alt="product-image" style={{display: "absolute", height:"120px", marginTop:"50px", width:"120px"}}/>
-                                  <ListItemText primary={nombre} style={{marginLeft:"5px"}}/>
+                                  <ListItemText primary={nombre} secondary={
+                                  <div>
+                                    <div><strong>Descripción: </strong>{descripcion}</div>
+                                    <div><strong>Fabricante: </strong>{fabricante}</div>
+                                    <div><strong>Artículo ID: </strong>{id}</div>
+                                    <div><strong>Precio: </strong>${precio}</div>
+                                  </div>} style={{marginLeft:"5px"}}/>
                                 </ListItem>
                             ))}
                         </List>
