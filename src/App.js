@@ -28,6 +28,7 @@ function App() {
           <Divider style={{marginTop: "15px", height: "2px"}}></Divider>
           <List component="productos" aria-labelledby="main navigation">
                             {productos.map(({ nombre, descripcion, fabricante, id, precio, imagen }) => (
+                              <Container>
                                 <ListItem>
                                   <img src={imagen} alt="product-image" style={{display: "absolute", height:"120px", marginTop:"50px", width:"120px"}}/>
                                   <ListItemText primary={nombre} secondary={
@@ -38,6 +39,9 @@ function App() {
                                     <div><strong>Precio: </strong>${precio}</div>
                                   </div>} style={{marginLeft:"5px"}}/>
                                 </ListItem>
+                                <div style={{width: "200px", marginLeft: "72%", height: "30px"}}>Configura tus productos</div>
+                                <Divider style={{marginTop: "20px", height: "2px"}}></Divider>
+                              </Container>
                             ))}
                         </List>
       </Container>
